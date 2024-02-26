@@ -1,5 +1,5 @@
 <template>
-<input type="number">
+<input type="number" placeholder="Введите число">
 </template>
 
 <script>
@@ -10,6 +10,10 @@ export default {
 
 <style scoped>
 input {
+    width: 500px;
+    position: relative;
+    top: -50px;
+    font-size: 1.2em;
     outline: none;
     border-radius: 3px;
     border: 0;
