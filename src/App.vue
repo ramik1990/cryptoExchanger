@@ -3,7 +3,7 @@
 
 <Input :changeAmount="changeAmount" :convert="convert"/>
 <p v-if="error != ''" className="error">{{ error }}</p>
-<p v-if="result != 0" className="error">{{ result }}</p>
+<p v-if="result != 0" className="result-text">{{ result }}</p>
 <div className="selectors">
     <Selector :setCrypto="setCryptoFirst"/>
     <Selector  :setCrypto="setCryptoSecond"/>
@@ -72,5 +72,9 @@ export default {
 }
 .error {
     color: red;
+}
+.result-text {
+    font-family: 'Nabla', cursive;
+    font-size: 2em;
 }
 </style>
